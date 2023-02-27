@@ -5,7 +5,9 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.GridView;
+import android.widget.Toast;
 
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
@@ -122,14 +124,14 @@ public class HomeFragment extends Fragment {
         CustomGrid adapter = new CustomGrid(getActivity(), propertiesArrayList);
         grid = (GridView) getActivity().findViewById(R.id.grid);
         grid.setAdapter(adapter);
-//        grid.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-//
-//            @Override
-//            public void onItemClick(AdapterView<?> parent, View view,
-//                                    int position, long id) {
-//                Toast.makeText(getActivity(), "You Clicked at ..", Toast.LENGTH_SHORT).show();
-//
-//            }
-//        });
+        grid.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+
+           @Override
+           public void onItemClick(AdapterView<?> parent, View view,
+                                   int position, long id) {
+               Toast.makeText(getActivity(), "You Clicked at ..", Toast.LENGTH_SHORT).show();
+
+            }
+      });
     }
 }

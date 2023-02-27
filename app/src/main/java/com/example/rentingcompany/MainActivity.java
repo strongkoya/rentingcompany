@@ -153,11 +153,16 @@ public class MainActivity extends AppCompatActivity {
         DataBaseHelper dataBaseHelper;
         dataBaseHelper = new DataBaseHelper(MainActivity.this, "EXP4", null, 1);
 
-        for (Property p : Properties) {
-//            System.out.println("\n\n\n****************^^^^^^^^^^^^^^^^^^^^^^^^^^^%%%%%%%%%%%%%%%%%%%%%%%%$$$$$$$$$$$$$$$$$$$$$$$$$$$######################@@@@@@@@@\n\n\n");
-//            System.out.println(p);
-            dataBaseHelper.insertProperty(p);
+        if (Properties != null) {
+            for (Property p : Properties) {
+                System.out.println("\n\n\n****************^^^^^^^^^^^^^^^^^^^^^^^^^^^%%%%%%%%%%%%%%%%%%%%%%%%$$$$$$$$$$$$$$$$$$$$$$$$$$$######################@@@@@@@@@\n\n\n");
+                System.out.println(p);
+               if(p!=null){ dataBaseHelper.insertProperty(p);}
+        }} else {
 
+            Toast toast = Toast.makeText(MainActivity.this,
+                    "Inserting Error", Toast.LENGTH_SHORT);
+            toast.show();
         }
 
 
