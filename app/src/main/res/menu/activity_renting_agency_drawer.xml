@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/menu"
+    tools:showIn="navigation_view">
+
+    <group
+        android:id="@+id/group"
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/home_icon"
+            android:title="Home" />
+
+    </group>
+    <group android:id="@+id/group2">
+        <item
+            android:id="@+id/nav_add"
+            android:icon="@drawable/add_icon"
+            android:title="Add New Property" />
+        <item
+            android:id="@+id/nav_edit"
+            android:enabled="true"
+            android:icon="@drawable/edit_icon"
+            android:title="Edit the List" />
+        <item
+            android:id="@+id/nav_request"
+            android:enabled="true"
+            android:icon="@drawable/menu_icon"
+            android:title="View Requests" />
+        <item
+            android:id="@+id/nav_renting_agency_history"
+            android:icon="@drawable/history_icon"
+            android:title="History" />
+    </group>
+    <group>
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/profile_icon"
+            android:title="Profile" />
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/logout_icon"
+            android:title="Logout" />
+    </group>
+</menu>

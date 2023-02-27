@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.rentingcompany.NavigationDrawerFragments.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_search"
+        android:name="com.example.rentingcompany.NavigationDrawerFragments.TenantFragments.SearchFragment"
+        android:label="@string/menu_search"
+        tools:layout="@layout/fragment_search" />
+    <fragment
+        android:id="@+id/nav_add"
+        android:name="com.example.rentingcompany.NavigationDrawerFragments.RentingAgencyFragments.AddFragment"
+        android:label="@string/menu_add"
+        tools:layout="@layout/fragment_add" />
+
+    <fragment
+        android:id="@+id/nav_edit"
+        android:name="com.example.rentingcompany.NavigationDrawerFragments.RentingAgencyFragments.EditFragment"
+        android:label="@string/menu_edit"
+        tools:layout="@layout/fragment_edit" />
+
+    <fragment
+        android:id="@+id/nav_request"
+        android:name="com.example.rentingcompany.NavigationDrawerFragments.RentingAgencyFragments.RequestsFragment"
+        android:label="@string/menu_requests"
+        tools:layout="@layout/fragment_requests" />
+
+    <fragment
+        android:id="@+id/nav_tenant_history"
+        android:name="com.example.rentingcompany.NavigationDrawerFragments.TenantFragments.TenantHistoryFragment"
+        android:label="@string/menu_tenant_history"
+        tools:layout="@layout/fragment_tenant_history" />
+    <fragment
+        android:id="@+id/nav_renting_agency_history"
+        android:name="com.example.rentingcompany.NavigationDrawerFragments.RentingAgencyFragments.AgencyHistoryFragment"
+        android:label="@string/menu_agency_history"
+        tools:layout="@layout/fragment_agency_history" />
+    <fragment
+        android:id="@+id/nav_menu"
+        android:name="com.example.rentingcompany.NavigationDrawerFragments.TenantFragments.MenuFragment"
+        android:label="@string/menu_menu"
+        tools:layout="@layout/fragment_menu" />
+    <fragment
+        android:id="@+id/nav_profile"
+        android:name="com.example.rentingcompany.NavigationDrawerFragments.ProfileFragment"
+        android:label="@string/menu_profile"
+        tools:layout="@layout/fragment_profile" />
+
+    <fragment
+        android:id="@+id/nav_logout"
+        android:name="com.example.rentingcompany.NavigationDrawerFragments.LogoutFragment"
+        android:label="@string/menu_logout"
+        tools:layout="@layout/fragment_logout" />
+</navigation>

@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".NavigationDrawerFragments.TenantFragments.MenuFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+        android:id="@+id/MsearchLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="visible"
+        tools:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="44dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="272dp"
+                android:layout_height="58dp"
+                android:layout_weight="1"
+                android:text="City"
+                android:textAlignment="center"
+                android:textSize="20sp" />
+
+            <Spinner
+                android:id="@+id/Mspinner1"
+                android:layout_width="match_parent"
+                android:layout_height="51dp"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="30dp" />
+
+        <TextView
+            android:layout_width="133dp"
+            android:layout_height="wrap_content"
+            android:text="Surface Area"
+            android:textAlignment="viewEnd"
+            android:textSize="20sp" />
+
+        <me.bendik.simplerangeview.SimpleRangeView
+            android:id="@+id/MsimpleRangeView"
+            app:movable="true"
+
+            android:layout_width="414dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="24dp" />
+
+        <TextView
+            android:id="@+id/Msurfacearearange_textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="100 - 370 Square Meters"
+            android:textAlignment="center"
+            android:textSize="16sp" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="40dp" />
+
+        <TextView
+            android:layout_width="211dp"
+            android:layout_height="wrap_content"
+            android:text="Number of Bedrooms"
+            android:textAlignment="viewEnd"
+            android:textSize="20sp" />
+
+        <me.bendik.simplerangeview.SimpleRangeView
+            android:id="@+id/MsimpleRangeView2"
+            app:movable="true"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="24dp" />
+
+        <TextView
+            android:id="@+id/Mbedroomsrange_textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="1 - 10 Bedrooms"
+            android:textAlignment="center"
+            android:textSize="16sp" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="28dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="302dp"
+                android:layout_height="wrap_content"
+                android:text="Minimum Number of Rental Price ($): "
+                android:textAlignment="viewEnd"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/MeditTextRentalPrice"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="ex: 2500"
+                android:inputType="number" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="35sp"
+                android:layout_weight="1"
+                android:text="Status: "
+                android:textAlignment="center"
+                android:textSize="20sp" />
+
+            <RadioGroup
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:checkedButton="@id/furnished_radioButton"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/Mfurnished_radioButton"
+                    android:layout_width="125dp"
+                    android:layout_height="35dp"
+                    android:checked="true"
+                    android:text="Furnsished"
+                    android:textColorHighlight="@color/orange"
+                    android:textColorLink="@color/orange2" />
+
+                <RadioButton
+                    android:id="@+id/Munfurnished_radioButton"
+                    android:layout_width="125dp"
+                    android:layout_height="35dp"
+                    android:text="Unfurnished"
+                    android:textColorHighlight="@color/orange"
+                    android:textColorLink="@color/orange2" />
+
+            </RadioGroup>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <CheckBox
+                android:id="@+id/McheckBox2"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Has a Balcony" />
+
+            <CheckBox
+                android:id="@+id/McheckBox3"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:text="Has a Garden" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/Msearch_button"
+            android:layout_width="169dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#FF5722"
+            android:text="Search" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/MresultLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="invisible">
+
+        <TextView
+            android:id="@+id/ViewMoreTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Click on Property to View More"
+            android:textColor="#FF5722"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <GridView
+            android:id="@+id/MresultGrid"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:verticalSpacing="15dp" >
+
+        </GridView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/MdetailsLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="invisible">
+
+        <GridView
+            android:id="@+id/MdetailsGrid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:verticalSpacing="15dp">
+
+        </GridView>
+
+        <Button
+            android:id="@+id/Mapply_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#FF5722"
+            android:text="Apply" />
+
+    </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,963 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NavigationBarFragments.ProfileFragment">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:context=".NavigationBarFragments.ProfileFragment">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/Renting_Agency"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:visibility="visible">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:id="@+id/linearLayout4"
+                            android:layout_width="match_parent"
+                            android:layout_height="58dp"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="140dp"
+                            android:layout_marginEnd="10dp"
+                            android:orientation="horizontal"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent">
+
+                            <TextView
+                                android:id="@+id/textView2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="11dp"
+                                android:layout_weight="1"
+                                android:maxWidth="67dp"
+                                android:minWidth="0dp"
+                                android:padding="4dp"
+                                android:text="Agency Name:" />
+
+                            <EditText
+                                android:id="@+id/updateRenting_agencyName"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="1dp"
+                                android:layout_weight="1"
+                                android:ems="10"
+                                android:inputType="textPersonName"
+                                android:minWidth="210dp"
+                                android:padding="9dp" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/updateRenting_countrySpinnerError"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="140dp"
+                            android:layout_marginTop="10dp"
+                            android:textColor="@color/red"
+                            android:textSize="12sp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/linearLayout7" />
+
+                        <LinearLayout
+                            android:id="@+id/linearLayout5"
+                            android:layout_width="match_parent"
+                            android:layout_height="58dp"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="232dp"
+                            android:layout_marginEnd="10dp"
+                            android:orientation="horizontal"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent">
+
+                            <TextView
+                                android:id="@+id/textView3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="11dp"
+                                android:layout_weight="1"
+                                android:maxWidth="67dp"
+                                android:minWidth="0dp"
+                                android:padding="4dp"
+                                android:text="Password" />
+
+                            <EditText
+                                android:id="@+id/updateRenting_password"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="1dp"
+                                android:layout_weight="1"
+                                android:ems="10"
+                                android:inputType="textPassword"
+                                android:minWidth="210dp"
+                                android:padding="9dp" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/updateRenting_citySpinnError"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="138dp"
+                            android:layout_marginTop="200dp"
+                            android:textColor="@color/red"
+                            android:textSize="12sp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/linearLayout6" />
+
+                        <LinearLayout
+                            android:id="@+id/linearLayout6"
+                            android:layout_width="match_parent"
+                            android:layout_height="58dp"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="330dp"
+                            android:layout_marginEnd="10dp"
+                            android:orientation="horizontal"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent">
+
+                            <TextView
+                                android:id="@+id/textView4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="11dp"
+                                android:layout_weight="1"
+                                android:maxWidth="67dp"
+                                android:minWidth="0dp"
+                                android:padding="4dp"
+                                android:text="Confirm Password:" />
+
+                            <EditText
+                                android:id="@+id/updateRenting_confirmpassword"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="1dp"
+                                android:layout_weight="1"
+                                android:ems="10"
+                                android:inputType="textPassword"
+                                android:minWidth="210dp"
+                                android:padding="9dp" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/updateRenting_confirmpasswordError"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="140dp"
+                            android:layout_marginTop="10dp"
+                            android:textColor="@color/red"
+                            android:textSize="12sp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/linearLayout6" />
+
+                        <LinearLayout
+                            android:id="@+id/linearLayout7"
+                            android:layout_width="match_parent"
+                            android:layout_height="58dp"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="425dp"
+                            android:layout_marginEnd="10dp"
+                            android:orientation="horizontal"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent">
+
+                            <TextView
+                                android:id="@+id/textView5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="11dp"
+                                android:layout_weight="1"
+                                android:maxWidth="67dp"
+                                android:minWidth="0dp"
+                                android:padding="4dp"
+                                android:text="Country:" />
+
+                            <Spinner
+                                android:id="@+id/updateRenting_countrySpinner"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="1dp"
+                                android:layout_weight="1"
+                                android:minWidth="207dp"
+                                android:padding="9dp" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/updateRenting_passwordError"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="140dp"
+                            android:layout_marginTop="8dp"
+                            android:textColor="@color/red"
+                            android:textSize="12sp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/linearLayout5" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="58dp"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="520dp"
+                            android:layout_marginEnd="10dp"
+                            android:orientation="horizontal"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent">
+
+                            <TextView
+                                android:id="@+id/textView6"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="11dp"
+                                android:layout_weight="1"
+                                android:maxWidth="67dp"
+                                android:minWidth="0dp"
+                                android:padding="4dp"
+                                android:text="City:" />
+
+                            <Spinner
+                                android:id="@+id/updateRenting_citySpinn"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="1dp"
+                                android:layout_weight="1"
+                                android:minWidth="182dp"
+                                android:padding="9dp" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/updateRenting_agencyNameError"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="140dp"
+                            android:layout_marginTop="8dp"
+                            android:textColor="@color/red"
+                            android:textSize="12sp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/linearLayout4" />
+
+                        <LinearLayout
+                            android:id="@+id/linearLayout2"
+                            android:layout_width="match_parent"
+                            android:layout_height="58dp"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="624dp"
+                            android:layout_marginEnd="10dp"
+                            android:orientation="horizontal"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent">
+
+                            <TextView
+                                android:id="@+id/textView7"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="11dp"
+                                android:layout_weight="1"
+                                android:maxWidth="67dp"
+                                android:minWidth="0dp"
+                                android:padding="4dp"
+                                android:text="Phone Number:" />
+
+                            <EditText
+                                android:id="@+id/updateRenting_phoneNumber"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="1dp"
+                                android:layout_weight="1"
+                                android:ems="10"
+                                android:inputType="number"
+                                android:minWidth="210dp"
+                                android:padding="9dp" />
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/updateRenting_phoneNumberError"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="140dp"
+                            android:layout_marginTop="688dp"
+                            android:textColor="@color/red"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/updateRenting_titleTextView"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:height="38dp"
+                            android:background="@color/orange"
+                            android:padding="7dp"
+                            android:paddingTop="14dp"
+                            android:text="Renting Agency Profile"
+                            android:textAlignment="center"
+                            android:textColor="#FFFFFF"
+                            android:textSize="20sp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <Button
+                            android:id="@+id/updateRenting_confirm"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="150dp"
+                            android:layout_marginTop="760dp"
+                            android:layout_marginEnd="150dp"
+                            android:layout_marginBottom="50dp"
+                            android:background="#03A9F4"
+                            android:text="Confirm"
+                            android:textAllCaps="false"
+                            android:textColor="#FFF"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/Tenant"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/tenantProfile_titleTextView"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:height="38dp"
+                            android:background="@color/orange"
+                            android:padding="7dp"
+                            android:paddingTop="14dp"
+                            android:text="Tenant Profile"
+                            android:textAlignment="center"
+                            android:textColor="#FFFEFE"
+                            android:textSize="20sp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="210dp"
+                            android:layout_marginEnd="10dp"
+                            android:minHeight="47dp"
+                            android:orientation="horizontal"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent">
+
+                            <TextView
+                                android:id="@+id/tenantProfile_firstName"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="11dp"
+                                android:layout_weight="1"
+                                android:maxWidth="67dp"
+                                android:minWidth="0dp"
+                                android:padding="4dp"
+                                android:text="First Name:" />
+
+                            <EditText
+                                android:id="@+id/tenantProfile_firstNameTextField"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="1dp"
+                                android:layout_weight="1"
+                                android:ems="10"
+                                android:inputType="textPersonName"
+                                android:minWidth="210dp"
+                                android:padding="9dp" />
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/tenantProfile_firstNameErrorTxtView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="140dp"
+                            android:layout_marginTop="265dp"
+                            android:layout_weight="1"
+                            android:textColor="#F31616"
+                            android:textColorHighlight="#F31616"
+                            android:textColorLink="#F31616"
+                            android:textSize="10sp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="295dp"
+                            android:layout_marginEnd="10dp"
+                            android:minHeight="47dp"
+                            android:orientation="horizontal"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent">
+
+                            <TextView
+                                android:id="@+id/tenantProfile_lastNameTextView"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="11dp"
+                                android:layout_weight="1"
+                                android:maxWidth="67dp"
+                                android:minWidth="0dp"
+                                android:padding="4dp"
+                                android:text="Last Name:" />
+
+                            <EditText
+                                android:id="@+id/tenantProfile_lastNameTextField"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="1dp"
+                                android:layout_weight="1"
+                                android:ems="10"
+                                android:inputType="textPersonName"
+                                android:minWidth="210dp"
+                                android:padding="9dp" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/tenantProfile_lastNmaeErrorTxtView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="140dp"
+                            android:layout_marginTop="350dp"
+                            android:textColor="#F31616"
+                            android:textColorHighlight="#F31616"
+                            android:textColorLink="#F31616"
+                            android:textSize="10sp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="380dp"
+                            android:layout_marginEnd="10dp"
+                            android:minHeight="47dp"
+                            android:orientation="horizontal"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent">
+
+                            <TextView
+                                android:id="@+id/tenantProfile_genderTextView"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="11dp"
+                                android:layout_weight="1"
+                                android:maxWidth="67dp"
+                                android:minWidth="0dp"
+                                android:padding="4dp"
+                                android:text="Gender:" />
+
+                            <Spinner
+                                android:id="@+id/tenantProfile_genderSpinner"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_weight="1"
+                                android:minWidth="205dp"
+                                android:padding="9dp" />
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/tenantProfile_genderErrorTxtView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="140dp"
+                            android:layout_marginTop="425dp"
+                            android:textColor="#F31616"
+                            android:textColorHighlight="#F31616"
+                            android:textColorLink="#F31616"
+                            android:textSize="10sp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="455dp"
+                            android:layout_marginEnd="10dp"
+                            android:minHeight="47dp"
+                            android:orientation="horizontal"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent">
+
+                            <TextView
+                                android:id="@+id/tenantProfile_passwordTextView"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="11dp"
+                                android:layout_weight="1"
+                                android:maxWidth="67dp"
+                                android:minWidth="0dp"
+                                android:padding="4dp"
+                                android:text="Password:" />
+
+                            <EditText
+                                android:id="@+id/tenantProfile_passwordTextField"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="1dp"
+                                android:layout_weight="1"
+                                android:ems="10"
+                                android:inputType="textPassword"
+                                android:minWidth="210dp"
+                                android:padding="9dp" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/tenantProfile_passwordErrorTxtView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="140dp"
+                            android:layout_marginTop="510dp"
+                            android:textColor="#F31616"
+                            android:textColorHighlight="#F31616"
+                            android:textColorLink="#F31616"
+                            android:textSize="10sp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="540dp"
+                            android:layout_marginEnd="10dp"
+                            android:minHeight="47dp"
+                            android:orientation="horizontal"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent">
+
+                            <TextView
+                                android:id="@+id/tenantProfile_confirmpasswordtextView"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="11dp"
+                                android:layout_weight="1"
+                                android:maxWidth="67dp"
+                                android:minWidth="0dp"
+                                android:padding="4dp"
+                                android:text="Confirm Password:" />
+
+                            <EditText
+                                android:id="@+id/tenantProfile_confirmPasswordTextFiled"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="1dp"
+                                android:layout_weight="1"
+                                android:ems="10"
+                                android:inputType="textPassword"
+                                android:minWidth="210dp"
+                                android:padding="9dp" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/tenantProfile_confirmPasswordErrorTxtView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="140dp"
+                            android:layout_marginTop="595dp"
+                            android:textColor="#F31616"
+                            android:textColorHighlight="#F31616"
+                            android:textColorLink="#F31616"
+                            android:textSize="10sp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="625dp"
+                            android:layout_marginEnd="10dp"
+                            android:minHeight="47dp"
+                            android:orientation="horizontal"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent">
+
+                            <TextView
+                                android:id="@+id/tenantProfile_nationalityTextView"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="11dp"
+                                android:layout_weight="1"
+                                android:maxWidth="67dp"
+                                android:minWidth="0dp"
+                                android:padding="4dp"
+                                android:text="Nationality:" />
+
+                            <Spinner
+                                android:id="@+id/tenantProfile_nationalitySpinner"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="1dp"
+                                android:layout_weight="1"
+                                android:minWidth="210dp"
+                                android:padding="9dp" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/tenantProfile_nationalityErrorTxtView"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="140dp"
+                            android:layout_marginTop="680dp"
+                            android:textSize="10sp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <LinearLayout
+                            android:id="@+id/linearLayout12"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="710dp"
+                            android:layout_marginEnd="10dp"
+                            android:minHeight="47dp"
+                            android:orientation="horizontal"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent">
+
+                            <TextView
+                                android:id="@+id/tenantProfile_grossMonthlySalaryTextView"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="-7dp"
+                                android:layout_marginRight="11dp"
+                                android:layout_weight="1"
+                                android:maxWidth="67dp"
+                                android:minWidth="0dp"
+                                android:padding="4dp"
+                                android:text="Gross Monthly Salary:" />
+
+                            <EditText
+                                android:id="@+id/tenantProfile_grossMonthlySalaryTextField"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="1dp"
+                                android:layout_weight="1"
+                                android:ems="10"
+                                android:inputType="number"
+                                android:minWidth="210dp"
+                                android:padding="9dp" />
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/tenantProfile_grossMonthlySalaryErrorTxtView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="140dp"
+                            android:layout_marginTop="13dp"
+                            android:layout_weight="1"
+                            android:textColor="@color/red"
+                            android:textSize="10sp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/linearLayout12" />
+
+                        <LinearLayout
+                            android:id="@+id/linearLayout13"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="795dp"
+                            android:layout_marginEnd="10dp"
+                            android:minHeight="47dp"
+                            android:orientation="horizontal"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent">
+
+                            <TextView
+                                android:id="@+id/tenantProfile_occupationTextView"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="11dp"
+                                android:layout_weight="1"
+                                android:maxWidth="67dp"
+                                android:minWidth="0dp"
+                                android:padding="4dp"
+                                android:text="Occupation:" />
+
+                            <EditText
+                                android:id="@+id/tenantProfile_occupationTextField"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:ems="10"
+                                android:inputType="textPersonName"
+                                android:minWidth="210dp" />
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/tenantProfile_occupationErrorTxtView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="140dp"
+                            android:layout_marginTop="15dp"
+                            android:layout_weight="1"
+                            android:textColor="@color/red"
+                            android:textSize="10sp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/linearLayout13" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="885dp"
+                            android:layout_marginEnd="10dp"
+                            android:minHeight="47dp"
+                            android:orientation="horizontal"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent">
+
+                            <TextView
+                                android:id="@+id/tenantProfile_familySizeTextView"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="11dp"
+                                android:layout_weight="1"
+                                android:maxWidth="67dp"
+                                android:minWidth="0dp"
+                                android:padding="4dp"
+                                android:text="Family Size:" />
+
+                            <EditText
+                                android:id="@+id/tenantProfile_familySizeTextField"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="1dp"
+                                android:layout_weight="1"
+                                android:ems="10"
+                                android:inputType="number"
+                                android:minWidth="210dp"
+                                android:padding="9dp" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/tenantProfile_familySizeErrorTxtView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="140dp"
+                            android:layout_marginTop="945dp"
+                            android:textColor="#F31616"
+                            android:textColorHighlight="#F31616"
+                            android:textColorLink="#F31616"
+                            android:textSize="10sp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="975dp"
+                            android:layout_marginEnd="10dp"
+                            android:minHeight="47dp"
+                            android:orientation="horizontal"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent">
+
+                            <TextView
+                                android:id="@+id/tenantProfile_currentResidenceCountryTextView"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="11dp"
+                                android:layout_weight="1"
+                                android:maxWidth="67dp"
+                                android:minWidth="0dp"
+                                android:padding="4dp"
+                                android:text="Current Residence Country:" />
+
+                            <Spinner
+                                android:id="@+id/tenantProfile_currentResidenceCountrySpinner"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="1dp"
+                                android:layout_weight="1"
+                                android:minWidth="210dp"
+                                android:padding="9dp" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/tenantProfile_currentresidenceErrorTxtView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="140dp"
+                            android:layout_marginTop="1045dp"
+                            android:textColor="#F31616"
+                            android:textColorHighlight="#F31616"
+                            android:textColorLink="#F31616"
+                            android:textSize="10sp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="1075dp"
+                            android:layout_marginEnd="10dp"
+                            android:minHeight="47dp"
+                            android:orientation="horizontal"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent">
+
+                            <TextView
+                                android:id="@+id/tenantProfile_cityTextView"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="11dp"
+                                android:layout_weight="1"
+                                android:maxWidth="83dp"
+                                android:minWidth="0dp"
+                                android:text="City:" />
+
+                            <Spinner
+                                android:id="@+id/tenantProfile_citySpinner"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="1dp"
+                                android:layout_weight="1"
+                                android:minWidth="173dp"
+                                android:padding="9dp" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/tenantProfile_cityErrorTxtView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="140dp"
+                            android:layout_marginTop="1130dp"
+                            android:textColor="#F31616"
+                            android:textColorHighlight="#F31616"
+                            android:textColorLink="#F31616"
+                            android:textSize="10sp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="1160dp"
+                            android:layout_marginEnd="10dp"
+                            android:orientation="horizontal"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent">
+
+                            <TextView
+                                android:id="@+id/tenantProfile_phoneNumberTextView"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="11dp"
+                                android:layout_weight="1"
+                                android:maxWidth="67dp"
+                                android:minWidth="0dp"
+                                android:text="Phone Number:" />
+
+                            <EditText
+                                android:id="@+id/tenantProfile_phoneNumberTextField"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="1dp"
+                                android:layout_weight="1"
+                                android:digits="0123456789+"
+                                android:inputType="phone"
+                                android:minWidth="210dp"
+                                android:padding="9dp" />
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/tenantProfile_phoneNumberErrorTxtView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="140dp"
+                            android:layout_marginTop="1215dp"
+                            android:textColor="#F31616"
+                            android:textColorHighlight="#F31616"
+                            android:textColorLink="#F31616"
+                            android:textSize="10sp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <Button
+                            android:id="@+id/tenantProfile_confirmButton"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="150dp"
+                            android:layout_marginTop="1300dp"
+                            android:layout_marginEnd="150dp"
+                            android:layout_marginBottom="50dp"
+                            android:background="#03A9F4"
+                            android:text="Confirm"
+                            android:textAllCaps="false"
+                            android:textColor="#FFF"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+    </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
