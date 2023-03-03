@@ -84,16 +84,18 @@ public class HomeFragment extends Fragment {
 
         DataBaseHelper DBHelper = new DataBaseHelper(getActivity(), "EXP4", null, 1);
 
-//        DBHelper.insertProperty(new Property("Beitonia", "Ramallah", 250, 2000, 5, 30000, true, "x", "2010-10-4", "Beautiful"));
-//        DBHelper.insertProperty(new Property("X", "Jenin", 250, 2000, 5, 30000, false, "x", "2010-10-4", "Beautiful"));
-//        DBHelper.insertProperty(new Property("Y", "Tulkarm", 250, 2000, 5, 30000, true, "x", "2010-10-4", "Beautiful"));
-//        DBHelper.insertProperty(new Property("Z", "Qalqilyah", 250, 2000, 5, 30000, false, "x", "2010-10-4", "Beautiful"));
-//        DBHelper.insertProperty(new Property("A", "Nablus", 250, 2000, 5, 30000, true, "x", "2010-10-4", "Beautiful"));
-//        DBHelper.insertProperty(new Property("B", "Jericho", 250, 2000, 5, 30000, false, "x", "2010-10-4", "Beautiful"));
-//        DBHelper.insertProperty(new Property("C", "Haifa", 250, 2000, 5, 30000, false, "x", "2010-10-4", "Beautiful"));
-//        DBHelper.insertProperty(new Property("G", "Akka", 250, 2000, 5, 30000, true, "x", "2010-10-4", "Beautiful"));
-//        DBHelper.insertProperty(new Property("tareq", "Jerusalem", 444, 44444, 4, 444, true, "x", "2010-10-4", "Nice"));
-//        DBHelper.insertProperty(new Property("Zaid", "akka", 244, 44444, 4, 244, true, "x", "2010-10-4", "Nice"));
+/*
+        DBHelper.insertProperty(new Property("T", "Tunis", 250, 2000, 5, 30000, true, "x", "2010-10-4", "Beautiful"));
+        DBHelper.insertProperty(new Property("S", "Sfax", 250, 2000, 5, 30000, false, "x", "2010-10-4", "Beautiful"));
+        DBHelper.insertProperty(new Property("N", "Nabeul", 250, 2000, 5, 30000, true, "x", "2010-10-4", "Beautiful"));
+        DBHelper.insertProperty(new Property("P", "Paris", 250, 2000, 5, 30000, false, "x", "2010-10-4", "Beautiful"));
+        DBHelper.insertProperty(new Property("F", "Florence", 250, 2000, 5, 30000, true, "x", "2010-10-4", "Beautiful"));
+        DBHelper.insertProperty(new Property("B", "Bordeaux", 250, 2000, 5, 30000, false, "x", "2010-10-4", "Beautiful"));
+        DBHelper.insertProperty(new Property("BA", "Ben Arous", 250, 2000, 5, 30000, false, "x", "2010-10-4", "Beautiful"));
+        DBHelper.insertProperty(new Property("N", "Nantes", 250, 2000, 5, 30000, true, "x", "2010-10-4", "Beautiful"));
+        DBHelper.insertProperty(new Property("tareq", "Montpellier", 444, 44444, 4, 444, true, "x", "2010-10-4", "Nice"));
+        DBHelper.insertProperty(new Property("Bologne", "Bologne", 244, 44444, 4, 244, true, "x", "2010-10-4", "Nice"));
+ */
 
 //        DBHelper.insertHave("C", email);
         SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");

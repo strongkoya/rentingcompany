@@ -117,8 +117,10 @@ public class MenuFragment extends Fragment {
         EditText minRentalPrice = (EditText) getActivity().findViewById(R.id.MeditTextRentalPrice);
         RadioButton furnishedRadioButton = (RadioButton) getActivity().findViewById(R.id.Mfurnished_radioButton);
 //        RadioButton unfurnishedRadioButton = (RadioButton) getActivity().findViewById(R.id.unfurnished_radioButton);
+        String[] cities = {"Tunis", "Sfax", "Tozeur", " Ben Arous", "Jendouba", "Nabeul", "Beja",
+                "Paris", "Marseille", "Toulouse", "Nantes","Montpellier", "Bordeaux", "Lille", "Rennes",
+                "Rome", "Milan", "Florence", "venise", "Naples", "Bologne"};
 
-        String[] cities = {"Jerusalem", "Ramallah", "Gaza", "Hebron", "Nablus", "Akka", "Bethlehem", "Oran", "Constantine", "Annaba", "Djelfa", "Biskra", "Setif", "Amman", "Zarqa", "Irbid", "Russeifa", "Wadi as-Ser", "Madaba", "al-Baq'a", "Sahab", "Doha", "Abu az Zuluf", "Abu Thaylah", "Al Ghanim", "Al Ghuwariyah", "Al `Arish", "Aleppo", "Damascus", "Homs", "Latakia", "Hama", "Qamishli", "Tartus", "Beirut", "Tripoli", "Sidon", "Zahle", "Batroun", "Tyre"};
         Spinner citySpinner = (Spinner) getActivity().findViewById(R.id.Mspinner1);
         ArrayAdapter<String> arrayAdapter_child = new ArrayAdapter<>(getActivity().getApplicationContext(), android.R.layout.simple_spinner_item, cities);
         citySpinner.setAdapter(arrayAdapter_child);
@@ -209,13 +211,13 @@ public class MenuFragment extends Fragment {
                         }
                     });
                 }
-//                propertiesArrayList.add(new Property("F", "Ramallah", 250, 2000, 5, 30000, true, "x", "2010-10-4", "Beautiful"));
-//                propertiesArrayList.add(new Property("E", "BETLEHEM", 250, 2000, 5, 30000, true, "x", "2010-10-4", "Beautiful"));
-//                propertiesArrayList.add(new Property("B", "JENIN", 250, 2000, 5, 30000, true, "x", "2010-10-4", "Beautiful"));
-//                propertiesArrayList.add(new Property("A", "Qalqilyah", 250, 2000, 5, 30000, true, "x", "2010-10-4", "Beautiful"));
-//                propertiesArrayList.add(new Property("B", "JERICHO", 250, 2000, 5, 30000, true, "x", "2010-10-4", "Beautiful"));
-//                propertiesArrayList.add(new Property("C", "TULKARM", 250, 2000, 5, 30000, true, "x", "2010-10-4", "Beautiful"));
-//                propertiesArrayList.add(new Property("D", "HEBRON", 250, 2000, 5, 30000, true, "x", "2010-10-4", "Beautiful"));
+//                propertiesArrayList.add(new Property("T", "Tunis", 250, 2000, 5, 30000, true, "x", "2010-10-4", "Beautiful"));
+//                propertiesArrayList.add(new Property("S", "Sfax", 250, 2000, 5, 30000, true, "x", "2010-10-4", "Beautiful"));
+//                propertiesArrayList.add(new Property("B", "Beja", 250, 2000, 5, 30000, true, "x", "2010-10-4", "Beautiful"));
+//                propertiesArrayList.add(new Property("P", "Paris", 250, 2000, 5, 30000, true, "x", "2010-10-4", "Beautiful"));
+//                propertiesArrayList.add(new Property("T", "Toulouse", 250, 2000, 5, 30000, true, "x", "2010-10-4", "Beautiful"));
+//                propertiesArrayList.add(new Property("N", "Nantes", 250, 2000, 5, 30000, true, "x", "2010-10-4", "Beautiful"));
+//                propertiesArrayList.add(new Property("R", "Rome", 250, 2000, 5, 30000, true, "x", "2010-10-4", "Beautiful"));
 
             }
         });

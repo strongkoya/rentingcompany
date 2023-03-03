@@ -99,7 +99,9 @@ public class EditFragment extends Fragment {
     @Override
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
-        String[] cities = {"Jerusalem", "Ramallah", "Gaza", "Hebron", "Nablus", "Akka", "Bethlehem", "Oran", "Constantine", "Annaba", "Djelfa", "Biskra", "Setif", "Amman", "Zarqa", "Irbid", "Russeifa", "Wadi as-Ser", "Madaba", "al-Baq'a", "Sahab", "Doha", "Abu az Zuluf", "Abu Thaylah", "Al Ghanim", "Al Ghuwariyah", "Al `Arish", "Aleppo", "Damascus", "Homs", "Latakia", "Hama", "Qamishli", "Tartus", "Beirut", "Tripoli", "Sidon", "Zahle", "Batroun", "Tyre"};
+        String[] cities = {"Tunis", "Sfax", "Tozeur", " Ben Arous", "Jendouba", "Nabeul", "Beja",
+                "Paris", "Marseille", "Toulouse", "Nantes","Montpellier", "Bordeaux", "Lille", "Rennes",
+                "Rome", "Milan", "Florence", "venise", "Naples", "Bologne"};
         Spinner citySpinner = (Spinner) getActivity().findViewById(R.id.citySpinner);
         ArrayAdapter<String> arrayAdapter_child = new ArrayAdapter<>(getActivity().getApplicationContext(), android.R.layout.simple_spinner_item, cities);
         citySpinner.setAdapter(arrayAdapter_child);

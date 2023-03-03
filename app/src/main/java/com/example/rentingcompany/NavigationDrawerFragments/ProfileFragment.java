@@ -160,29 +160,24 @@ public class ProfileFragment extends Fragment {
 
             Button confirm = (Button) getActivity().findViewById(R.id.updateRenting_confirm);
 
-            String[] currentResidenceCountryoptions = {"Palestine", "Algeria", "Jordan", "Qatar", "Syria", "Lebanon"};
+            String[] currentResidenceCountryoptions = {"Tunisia", "France", "Italia"};
             Spinner countrySpinner = (Spinner) getActivity().findViewById(R.id.updateRenting_countrySpinner);
 
             ArrayAdapter<String> arrayAdapter_parent = new ArrayAdapter<>(getActivity().getApplicationContext(), android.R.layout.simple_spinner_item, currentResidenceCountryoptions);
             countrySpinner.setAdapter(arrayAdapter_parent);
 
 
-            String[] palestineCities = {"Jerusalem", "Ramallah", "Gaza", " Hebron", "Nablus", "Akka", "Bethlehem"};
-            String[] AlgeriaCities = {"Oran", "Oran", "Constantine", "Annaba", "Djelfa", "Biskra", "Setif"};
-            String[] JordanCities = {"Amman", "Zarqa", "Irbid", "Russeifa", "Wadi as-Ser", "Madaba", "al-Baq'a", "Sahab"};
-            String[] QatarCities = {"Doha", "Abu az Zuluf", "Abu Thaylah", "Al Ghanim", "Al Ghuwariyah", "Al `Arish"};
-            String[] SyriaCities = {"Aleppo", "Damascus", "Homs", "Latakia", "Hama", "Qamishli", "Tartus"};
-            String[] LebanonCities = {"Beirut", "Tripoli", "Sidon", "Zahle", "Batroun", "Tyre"};
+            String[] TunisiaCities = {"Tunis", "Sfax", "Tozeur", " Ben Arous", "Jendouba", "Nabeul", "Beja"};
+            String[] FranceCities = {"Paris", "Marseille", "Toulouse", "Nantes","Montpellier", "Bordeaux", "Lille", "Rennes"};
+            String[] ItaliaCities = {"Rome", "Milan", "Florence", "venise", "Naples", "Bologne"};
 
             Spinner citySpinn = (Spinner) getActivity().findViewById(R.id.updateRenting_citySpinn);
 
             ArrayList<String[]> Cities = new ArrayList<>();
-            Cities.add(palestineCities);
-            Cities.add(AlgeriaCities);
-            Cities.add(JordanCities);
-            Cities.add(QatarCities);
-            Cities.add(SyriaCities);
-            Cities.add(LebanonCities);
+            Cities.add(TunisiaCities);
+            Cities.add(FranceCities);
+            Cities.add(ItaliaCities);
+
 
             DataBaseHelper DB = new DataBaseHelper(getActivity(), "EXP4", null, 1);
             Cursor cursor = DB.getRentingAgencyData(email);
@@ -208,41 +203,26 @@ public class ProfileFragment extends Fragment {
                         firstTime = false;
                     } else {
                         if (i == 0) {
-                            ArrayAdapter<String> arrayAdapter_child = new ArrayAdapter<>(getActivity().getApplicationContext(), android.R.layout.simple_spinner_item, palestineCities);
+                            ArrayAdapter<String> arrayAdapter_child = new ArrayAdapter<>(getActivity().getApplicationContext(), android.R.layout.simple_spinner_item, TunisiaCities);
                             citySpinn.setAdapter(arrayAdapter_child);
                             phoneNumber.setText("00970");
                         }
                         if (i == 1) {
-                            ArrayAdapter<String> arrayAdapter_child = new ArrayAdapter<>(getActivity().getApplicationContext(), android.R.layout.simple_spinner_item, AlgeriaCities);
+                            ArrayAdapter<String> arrayAdapter_child = new ArrayAdapter<>(getActivity().getApplicationContext(), android.R.layout.simple_spinner_item, FranceCities);
                             citySpinn.setAdapter(arrayAdapter_child);
                             phoneNumber.setText("00213");
                         }
                         if (i == 2) {
-                            ArrayAdapter<String> arrayAdapter_child = new ArrayAdapter<>(getActivity().getApplicationContext(), android.R.layout.simple_spinner_item, JordanCities);
+                            ArrayAdapter<String> arrayAdapter_child = new ArrayAdapter<>(getActivity().getApplicationContext(), android.R.layout.simple_spinner_item, ItaliaCities);
                             citySpinn.setAdapter(arrayAdapter_child);
                             phoneNumber.setText("00962");
-                        }
-                        if (i == 3) {
-                            ArrayAdapter<String> arrayAdapter_child = new ArrayAdapter<>(getActivity().getApplicationContext(), android.R.layout.simple_spinner_item, QatarCities);
-                            citySpinn.setAdapter(arrayAdapter_child);
-                            phoneNumber.setText("00974");
-                        }
-                        if (i == 4) {
-                            ArrayAdapter<String> arrayAdapter_child = new ArrayAdapter<>(getActivity().getApplicationContext(), android.R.layout.simple_spinner_item, SyriaCities);
-                            citySpinn.setAdapter(arrayAdapter_child);
-                            phoneNumber.setText("00963");
-                        }
-                        if (i == 5) {
-                            ArrayAdapter<String> arrayAdapter_child = new ArrayAdapter<>(getActivity().getApplicationContext(), android.R.layout.simple_spinner_item, LebanonCities);
-                            citySpinn.setAdapter(arrayAdapter_child);
-                            phoneNumber.setText("00961");
                         }
                     }
                 }
 
                 @Override
                 public void onNothingSelected(AdapterView<?> adapterView) {
-                    ArrayAdapter<String> arrayAdapter_child = new ArrayAdapter<>(getActivity().getApplicationContext(), android.R.layout.simple_spinner_item, palestineCities);
+                    ArrayAdapter<String> arrayAdapter_child = new ArrayAdapter<>(getActivity().getApplicationContext(), android.R.layout.simple_spinner_item, TunisiaCities);
                     citySpinn.setAdapter(arrayAdapter_child);
                 }
             });
@@ -328,40 +308,25 @@ public class ProfileFragment extends Fragment {
                         @Override
                         public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
                             if (i == 0) {
-                                ArrayAdapter<String> arrayAdapter_child = new ArrayAdapter<>(getActivity().getApplicationContext(), android.R.layout.simple_spinner_item, palestineCities);
+                                ArrayAdapter<String> arrayAdapter_child = new ArrayAdapter<>(getActivity().getApplicationContext(), android.R.layout.simple_spinner_item, TunisiaCities);
                                 citySpinn.setAdapter(arrayAdapter_child);
-                                phoneNumber.setText("00970");
+                                phoneNumber.setText("00216");
                             }
                             if (i == 1) {
-                                ArrayAdapter<String> arrayAdapter_child = new ArrayAdapter<>(getActivity().getApplicationContext(), android.R.layout.simple_spinner_item, AlgeriaCities);
+                                ArrayAdapter<String> arrayAdapter_child = new ArrayAdapter<>(getActivity().getApplicationContext(), android.R.layout.simple_spinner_item, FranceCities);
                                 citySpinn.setAdapter(arrayAdapter_child);
                                 phoneNumber.setText("00213");
                             }
                             if (i == 2) {
-                                ArrayAdapter<String> arrayAdapter_child = new ArrayAdapter<>(getActivity().getApplicationContext(), android.R.layout.simple_spinner_item, JordanCities);
+                                ArrayAdapter<String> arrayAdapter_child = new ArrayAdapter<>(getActivity().getApplicationContext(), android.R.layout.simple_spinner_item, ItaliaCities);
                                 citySpinn.setAdapter(arrayAdapter_child);
                                 phoneNumber.setText("00962");
-                            }
-                            if (i == 3) {
-                                ArrayAdapter<String> arrayAdapter_child = new ArrayAdapter<>(getActivity().getApplicationContext(), android.R.layout.simple_spinner_item, QatarCities);
-                                citySpinn.setAdapter(arrayAdapter_child);
-                                phoneNumber.setText("00974");
-                            }
-                            if (i == 4) {
-                                ArrayAdapter<String> arrayAdapter_child = new ArrayAdapter<>(getActivity().getApplicationContext(), android.R.layout.simple_spinner_item, SyriaCities);
-                                citySpinn.setAdapter(arrayAdapter_child);
-                                phoneNumber.setText("00963");
-                            }
-                            if (i == 5) {
-                                ArrayAdapter<String> arrayAdapter_child = new ArrayAdapter<>(getActivity().getApplicationContext(), android.R.layout.simple_spinner_item, LebanonCities);
-                                citySpinn.setAdapter(arrayAdapter_child);
-                                phoneNumber.setText("00961");
                             }
                         }
 
                         @Override
                         public void onNothingSelected(AdapterView<?> adapterView) {
-                            ArrayAdapter<String> arrayAdapter_child = new ArrayAdapter<>(getActivity().getApplicationContext(), android.R.layout.simple_spinner_item, palestineCities);
+                            ArrayAdapter<String> arrayAdapter_child = new ArrayAdapter<>(getActivity().getApplicationContext(), android.R.layout.simple_spinner_item, TunisiaCities);
                             citySpinn.setAdapter(arrayAdapter_child);
 
                         }
@@ -457,7 +422,7 @@ public class ProfileFragment extends Fragment {
             genderSpinner.setAdapter(objGenderArr);
 
 
-            String[] nationalityOptions = {"Palestinian", "Algerian", "Jordanian", "Qatari", "Syrian", "Lebanese", "Egyptian", "Turkey", "Tunisia"};
+            String[] nationalityOptions = {"Tunisia", "Français", "Italia",};
             final Spinner nationalitySpinner = (Spinner)
                     getActivity().findViewById(R.id.tenantProfile_nationalitySpinner);
             ArrayAdapter<String> objNationalityArr = new
@@ -511,41 +476,26 @@ public class ProfileFragment extends Fragment {
                         firstTime = false;
                     } else {
                         if (i == 0) {
-                            ArrayAdapter<String> arrayAdapter_child = new ArrayAdapter<>(getActivity().getApplicationContext(), android.R.layout.simple_spinner_item, palestineCities);
+                            ArrayAdapter<String> arrayAdapter_child = new ArrayAdapter<>(getActivity().getApplicationContext(), android.R.layout.simple_spinner_item, TunisiaCities);
                             citySpinner.setAdapter(arrayAdapter_child);
-                            phoneNumberTextField.setText("00970");
+                            phoneNumberTextField.setText("00216");
                         }
                         if (i == 1) {
-                            ArrayAdapter<String> arrayAdapter_child = new ArrayAdapter<>(getActivity().getApplicationContext(), android.R.layout.simple_spinner_item, AlgeriaCities);
+                            ArrayAdapter<String> arrayAdapter_child = new ArrayAdapter<>(getActivity().getApplicationContext(), android.R.layout.simple_spinner_item, FranceCities);
                             citySpinner.setAdapter(arrayAdapter_child);
-                            phoneNumberTextField.setText("00213");
+                            phoneNumberTextField.setText("00233");
                         }
                         if (i == 2) {
-                            ArrayAdapter<String> arrayAdapter_child = new ArrayAdapter<>(getActivity().getApplicationContext(), android.R.layout.simple_spinner_item, JordanCities);
+                            ArrayAdapter<String> arrayAdapter_child = new ArrayAdapter<>(getActivity().getApplicationContext(), android.R.layout.simple_spinner_item, ItaliaCities);
                             citySpinner.setAdapter(arrayAdapter_child);
-                            phoneNumberTextField.setText("00962");
-                        }
-                        if (i == 3) {
-                            ArrayAdapter<String> arrayAdapter_child = new ArrayAdapter<>(getActivity().getApplicationContext(), android.R.layout.simple_spinner_item, QatarCities);
-                            citySpinner.setAdapter(arrayAdapter_child);
-                            phoneNumberTextField.setText("00974");
-                        }
-                        if (i == 4) {
-                            ArrayAdapter<String> arrayAdapter_child = new ArrayAdapter<>(getActivity().getApplicationContext(), android.R.layout.simple_spinner_item, SyriaCities);
-                            citySpinner.setAdapter(arrayAdapter_child);
-                            phoneNumberTextField.setText("00963");
-                        }
-                        if (i == 5) {
-                            ArrayAdapter<String> arrayAdapter_child = new ArrayAdapter<>(getActivity().getApplicationContext(), android.R.layout.simple_spinner_item, LebanonCities);
-                            citySpinner.setAdapter(arrayAdapter_child);
-                            phoneNumberTextField.setText("00961");
+                            phoneNumberTextField.setText("00221");
                         }
                     }
                 }
 
                 @Override
                 public void onNothingSelected(AdapterView<?> adapterView) {
-                    ArrayAdapter<String> arrayAdapter_child = new ArrayAdapter<>(getActivity().getApplicationContext(), android.R.layout.simple_spinner_item, palestineCities);
+                    ArrayAdapter<String> arrayAdapter_child = new ArrayAdapter<>(getActivity().getApplicationContext(), android.R.layout.simple_spinner_item, TunisiaCities);
                     citySpinner.setAdapter(arrayAdapter_child);
                 }
             });
@@ -699,40 +649,25 @@ public class ProfileFragment extends Fragment {
                         @Override
                         public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
                             if (i == 0) {
-                                ArrayAdapter<String> arrayAdapter_child = new ArrayAdapter<>(getActivity().getApplicationContext(), android.R.layout.simple_spinner_item, palestineCities);
+                                ArrayAdapter<String> arrayAdapter_child = new ArrayAdapter<>(getActivity().getApplicationContext(), android.R.layout.simple_spinner_item, TunisiaCities);
                                 citySpinner.setAdapter(arrayAdapter_child);
                                 phoneNumberTextField.setText("00970");
                             }
                             if (i == 1) {
-                                ArrayAdapter<String> arrayAdapter_child = new ArrayAdapter<>(getActivity().getApplicationContext(), android.R.layout.simple_spinner_item, AlgeriaCities);
+                                ArrayAdapter<String> arrayAdapter_child = new ArrayAdapter<>(getActivity().getApplicationContext(), android.R.layout.simple_spinner_item, FranceCities);
                                 citySpinner.setAdapter(arrayAdapter_child);
                                 phoneNumberTextField.setText("00213");
                             }
                             if (i == 2) {
-                                ArrayAdapter<String> arrayAdapter_child = new ArrayAdapter<>(getActivity().getApplicationContext(), android.R.layout.simple_spinner_item, JordanCities);
+                                ArrayAdapter<String> arrayAdapter_child = new ArrayAdapter<>(getActivity().getApplicationContext(), android.R.layout.simple_spinner_item, ItaliaCities);
                                 citySpinner.setAdapter(arrayAdapter_child);
                                 phoneNumberTextField.setText("00962");
-                            }
-                            if (i == 3) {
-                                ArrayAdapter<String> arrayAdapter_child = new ArrayAdapter<>(getActivity().getApplicationContext(), android.R.layout.simple_spinner_item, QatarCities);
-                                citySpinner.setAdapter(arrayAdapter_child);
-                                phoneNumberTextField.setText("00974");
-                            }
-                            if (i == 4) {
-                                ArrayAdapter<String> arrayAdapter_child = new ArrayAdapter<>(getActivity().getApplicationContext(), android.R.layout.simple_spinner_item, SyriaCities);
-                                citySpinner.setAdapter(arrayAdapter_child);
-                                phoneNumberTextField.setText("00963");
-                            }
-                            if (i == 5) {
-                                ArrayAdapter<String> arrayAdapter_child = new ArrayAdapter<>(getActivity().getApplicationContext(), android.R.layout.simple_spinner_item, LebanonCities);
-                                citySpinner.setAdapter(arrayAdapter_child);
-                                phoneNumberTextField.setText("00961");
                             }
                         }
 
                         @Override
                         public void onNothingSelected(AdapterView<?> adapterView) {
-                            ArrayAdapter<String> arrayAdapter_child = new ArrayAdapter<>(getActivity().getApplicationContext(), android.R.layout.simple_spinner_item, palestineCities);
+                            ArrayAdapter<String> arrayAdapter_child = new ArrayAdapter<>(getActivity().getApplicationContext(), android.R.layout.simple_spinner_item,TunisiaCities);
                             citySpinner.setAdapter(arrayAdapter_child);
                         }
                     });

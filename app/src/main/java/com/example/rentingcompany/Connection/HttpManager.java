@@ -13,7 +13,7 @@ public class HttpManager {
     public static String getData(String URL) {
         BufferedReader bufferedReader = null;
         try {
-            java.net.URL url = new URL(URL);
+            URL url = new URL(URL);
             HttpURLConnection httpURLConnection = (HttpURLConnection) url.openConnection();
             bufferedReader = new BufferedReader(new InputStreamReader(httpURLConnection.getInputStream()));
             StringBuilder stringBuilder = new StringBuilder();

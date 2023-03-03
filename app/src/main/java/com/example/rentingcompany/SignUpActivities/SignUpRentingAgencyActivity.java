@@ -51,7 +51,7 @@ public class SignUpRentingAgencyActivity extends AppCompatActivity {
 
         Button confirm = (Button) findViewById(R.id.confirm);
 
-        String[] currentResidenceCountryoptions = {"Palestine", "Algeria", "Jordan", "Qatar", "Syria", "Lebanon"};
+            String[] currentResidenceCountryoptions = {"Tunisia ", "France", "Italia"};
         Spinner countrySpinner = (Spinner)
                 findViewById(R.id.countrySpinner);
 
@@ -59,60 +59,43 @@ public class SignUpRentingAgencyActivity extends AppCompatActivity {
         countrySpinner.setAdapter(arrayAdapter_parent);
 
 
-        String[] palestineCities = {"Jerusalem", "Ramallah", "Gaza", " Hebron", "Nablus", "Akka", "Bethlehem"};
-        String[] AlgeriaCities = {"Oran", "Oran", "Constantine", "Annaba", "Djelfa", "Biskra", "Setif"};
-        String[] JordanCities = {"Amman", "Zarqa", "Irbid", "Russeifa", "Wadi as-Ser", "Madaba", "al-Baq'a", "Sahab"};
-        String[] QatarCities = {"Doha", "Abu az Zuluf", "Abu Thaylah", "Al Ghanim", "Al Ghuwariyah", "Al `Arish"};
-        String[] SyriaCities = {"Aleppo", "Damascus", "Homs", "Latakia", "Hama", "Qamishli", "Tartus"};
-        String[] LebanonCities = {"Beirut", "Tripoli", "Sidon", "Zahle", "Batroun", "Tyre"};
+        String[] TunisiaCities = {"Tunis", "Sfax", "Tozeur", " Ben Arous", "Jendouba", "Nabeul", "Beja"};
+        String[] FranceCities = {"Paris", "Marseille", "Toulouse", "Nantes","Montpellier", "Bordeaux", "Lille", "Rennes"};
+        String[] ItaliaCities = {"Rome", "Milan", "Florence", "venise", "Naples", "Bologne"};
+
 
 
         Spinner citySpinn = (Spinner) findViewById(R.id.citySpinn);
 
         ArrayAdapter<String> objCCClityArr = new
-                ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, palestineCities);
+                ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, TunisiaCities);
         citySpinn.setAdapter(objCCClityArr);
 
-        phoneNumber.setText("00970");
+        phoneNumber.setText("00216");
 
         countrySpinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
                 if (i == 0) {
-                    ArrayAdapter<String> arrayAdapter_child = new ArrayAdapter<>(getApplicationContext(), android.R.layout.simple_spinner_item, palestineCities);
+                    ArrayAdapter<String> arrayAdapter_child = new ArrayAdapter<>(getApplicationContext(), android.R.layout.simple_spinner_item, TunisiaCities);
                     citySpinn.setAdapter(arrayAdapter_child);
-                    phoneNumber.setText("00970");
+                    phoneNumber.setText("00216");
                 }
                 if (i == 1) {
-                    ArrayAdapter<String> arrayAdapter_child = new ArrayAdapter<>(getApplicationContext(), android.R.layout.simple_spinner_item, AlgeriaCities);
+                    ArrayAdapter<String> arrayAdapter_child = new ArrayAdapter<>(getApplicationContext(), android.R.layout.simple_spinner_item, FranceCities);
                     citySpinn.setAdapter(arrayAdapter_child);
-                    phoneNumber.setText("00213");
+                    phoneNumber.setText("00233");
                 }
                 if (i == 2) {
-                    ArrayAdapter<String> arrayAdapter_child = new ArrayAdapter<>(getApplicationContext(), android.R.layout.simple_spinner_item, JordanCities);
+                    ArrayAdapter<String> arrayAdapter_child = new ArrayAdapter<>(getApplicationContext(), android.R.layout.simple_spinner_item, ItaliaCities);
                     citySpinn.setAdapter(arrayAdapter_child);
-                    phoneNumber.setText("00962");
-                }
-                if (i == 3) {
-                    ArrayAdapter<String> arrayAdapter_child = new ArrayAdapter<>(getApplicationContext(), android.R.layout.simple_spinner_item, QatarCities);
-                    citySpinn.setAdapter(arrayAdapter_child);
-                    phoneNumber.setText("00974");
-                }
-                if (i == 4) {
-                    ArrayAdapter<String> arrayAdapter_child = new ArrayAdapter<>(getApplicationContext(), android.R.layout.simple_spinner_item, SyriaCities);
-                    citySpinn.setAdapter(arrayAdapter_child);
-                    phoneNumber.setText("00963");
-                }
-                if (i == 5) {
-                    ArrayAdapter<String> arrayAdapter_child = new ArrayAdapter<>(getApplicationContext(), android.R.layout.simple_spinner_item, LebanonCities);
-                    citySpinn.setAdapter(arrayAdapter_child);
-                    phoneNumber.setText("00961");
+                    phoneNumber.setText("00221");
                 }
             }
 
             @Override
             public void onNothingSelected(AdapterView<?> adapterView) {
-                ArrayAdapter<String> arrayAdapter_child = new ArrayAdapter<>(getApplicationContext(), android.R.layout.simple_spinner_item, palestineCities);
+                ArrayAdapter<String> arrayAdapter_child = new ArrayAdapter<>(getApplicationContext(), android.R.layout.simple_spinner_item, TunisiaCities);
                 citySpinn.setAdapter(arrayAdapter_child);
 
             }
@@ -224,40 +207,25 @@ public class SignUpRentingAgencyActivity extends AppCompatActivity {
                     @Override
                     public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
                         if (i == 0) {
-                            ArrayAdapter<String> arrayAdapter_child = new ArrayAdapter<>(getApplicationContext(), android.R.layout.simple_spinner_item, palestineCities);
+                            ArrayAdapter<String> arrayAdapter_child = new ArrayAdapter<>(getApplicationContext(), android.R.layout.simple_spinner_item, TunisiaCities);
                             citySpinn.setAdapter(arrayAdapter_child);
                             phoneNumber.setText("00970");
                         }
                         if (i == 1) {
-                            ArrayAdapter<String> arrayAdapter_child = new ArrayAdapter<>(getApplicationContext(), android.R.layout.simple_spinner_item, AlgeriaCities);
+                            ArrayAdapter<String> arrayAdapter_child = new ArrayAdapter<>(getApplicationContext(), android.R.layout.simple_spinner_item, FranceCities);
                             citySpinn.setAdapter(arrayAdapter_child);
                             phoneNumber.setText("00213");
                         }
                         if (i == 2) {
-                            ArrayAdapter<String> arrayAdapter_child = new ArrayAdapter<>(getApplicationContext(), android.R.layout.simple_spinner_item, JordanCities);
+                            ArrayAdapter<String> arrayAdapter_child = new ArrayAdapter<>(getApplicationContext(), android.R.layout.simple_spinner_item, ItaliaCities);
                             citySpinn.setAdapter(arrayAdapter_child);
-                            phoneNumber.setText("00962");
-                        }
-                        if (i == 3) {
-                            ArrayAdapter<String> arrayAdapter_child = new ArrayAdapter<>(getApplicationContext(), android.R.layout.simple_spinner_item, QatarCities);
-                            citySpinn.setAdapter(arrayAdapter_child);
-                            phoneNumber.setText("00974");
-                        }
-                        if (i == 4) {
-                            ArrayAdapter<String> arrayAdapter_child = new ArrayAdapter<>(getApplicationContext(), android.R.layout.simple_spinner_item, SyriaCities);
-                            citySpinn.setAdapter(arrayAdapter_child);
-                            phoneNumber.setText("00963");
-                        }
-                        if (i == 5) {
-                            ArrayAdapter<String> arrayAdapter_child = new ArrayAdapter<>(getApplicationContext(), android.R.layout.simple_spinner_item, LebanonCities);
-                            citySpinn.setAdapter(arrayAdapter_child);
-                            phoneNumber.setText("00961");
+                            phoneNumber.setText("00216");
                         }
                     }
 
                     @Override
                     public void onNothingSelected(AdapterView<?> adapterView) {
-                        ArrayAdapter<String> arrayAdapter_child = new ArrayAdapter<>(getApplicationContext(), android.R.layout.simple_spinner_item, palestineCities);
+                        ArrayAdapter<String> arrayAdapter_child = new ArrayAdapter<>(getApplicationContext(), android.R.layout.simple_spinner_item, TunisiaCities);
                         citySpinn.setAdapter(arrayAdapter_child);
 
                     }

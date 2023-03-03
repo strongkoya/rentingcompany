@@ -16,7 +16,7 @@ public class PropertyJasonParser {
             JSONArray jsonArray = new JSONArray(jason);
             Properties = new ArrayList<>();
             for (int i = 0; i < jsonArray.length(); i++) {
-                JSONObject jsonObject = new JSONObject();
+                JSONObject jsonObject ;
                 jsonObject = (JSONObject) jsonArray.get(i);
                 Property property = new Property();
 
