@@ -18,13 +18,6 @@ public class ConnectionAsyncTask extends AsyncTask<String, String,
         this.activity = activity;
     }
 
-    @Override
-    protected void onPreExecute() {
-
-        ((MainActivity) activity).setButtonText("Connecting");
-        super.onPreExecute();
-        ((MainActivity) activity).setProgress(true);
-    }
 
     @Override
     protected String doInBackground(String... params) {
@@ -34,14 +27,5 @@ public class ConnectionAsyncTask extends AsyncTask<String, String,
         } else return "";
     }
 
-    @Override
-    protected void onPostExecute(String s) {
-        super.onPostExecute(s);
-        ((MainActivity) activity).setProgress(false);
-        List<Property> Properties = com.example.rentingcompany.Connection.PropertyJasonParser.getObjectFromJason(s);
-        ((MainActivity) activity).fillProperties(Properties);
-        ((MainActivity) activity).fillPropertiesIntoDB(Properties);
 
-
-    }
 }

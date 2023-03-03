@@ -1,53 +1,63 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/linearLayout10"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/register_bk_color"
     tools:context=".SignUpActivities.SignUpTenantActivity">
 
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="5dp">
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical">
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical"
+            android:padding="15dp">
 
-            <androidx.constraintlayout.widget.ConstraintLayout
+            <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="wrap_content">
 
                 <TextView
-                    android:id="@+id/tenantTitleTextView"
-                    android:layout_width="match_parent"
-                    android:layout_height="50dp"
-                    android:height="38dp"
-                    android:background="#2196F3"
-                    android:padding="7dp"
-                    android:paddingTop="14dp"
-                    android:text="Tenant Sign Up"
-                    android:textAlignment="center"
-                    android:textColor="#FFFEFE"
-                    android:textSize="20sp"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
+                    style="@style/viewParent.headerText.NoMode"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginTop="16dp"
+                    android:text="Here’s your \nfirst step \nwith us as \nTenant ! "
+                    android:textColor="@color/whiteTextColor" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="-28dp"
+                    android:layout_marginRight="-1dp"
+                    android:src="@drawable/ic_login_hero" />
+
+            </RelativeLayout>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="924dp"
+                android:layout_marginTop="10dp"
+                app:cardBackgroundColor="@color/whiteTextColor"
+                app:cardCornerRadius="10dp">
 
                 <LinearLayout
                     android:id="@+id/linearLayout11"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="58dp"
                     android:layout_marginStart="10dp"
-                    android:layout_marginTop="125dp"
+                    android:layout_marginTop="50dp"
                     android:layout_marginEnd="10dp"
-                    android:minHeight="47dp"
                     android:orientation="horizontal"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
@@ -95,7 +105,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="10dp"
-                    android:layout_marginTop="210dp"
+                    android:layout_marginTop="110dp"
                     android:layout_marginEnd="10dp"
                     android:minHeight="47dp"
                     android:orientation="horizontal"
@@ -145,7 +155,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="10dp"
-                    android:layout_marginTop="295dp"
+                    android:layout_marginTop="185dp"
                     android:layout_marginEnd="10dp"
                     android:minHeight="47dp"
                     android:orientation="horizontal"
@@ -193,7 +203,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="10dp"
-                    android:layout_marginTop="380dp"
+                    android:layout_marginTop="260dp"
                     android:layout_marginEnd="10dp"
                     android:minHeight="47dp"
                     android:orientation="horizontal"
@@ -240,7 +250,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="10dp"
-                    android:layout_marginTop="455dp"
+                    android:layout_marginTop="315dp"
                     android:layout_marginEnd="10dp"
                     android:minHeight="47dp"
                     android:orientation="horizontal"
@@ -288,7 +298,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="10dp"
-                    android:layout_marginTop="540dp"
+                    android:layout_marginTop="380dp"
                     android:layout_marginEnd="10dp"
                     android:minHeight="47dp"
                     android:orientation="horizontal"
@@ -336,7 +346,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="10dp"
-                    android:layout_marginTop="625dp"
+                    android:layout_marginTop="455dp"
                     android:layout_marginEnd="10dp"
                     android:minHeight="47dp"
                     android:orientation="horizontal"
@@ -380,7 +390,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="10dp"
-                    android:layout_marginTop="710dp"
+                    android:layout_marginTop="505dp"
                     android:layout_marginEnd="10dp"
                     android:minHeight="47dp"
                     android:orientation="horizontal"
@@ -430,7 +440,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="10dp"
-                    android:layout_marginTop="795dp"
+                    android:layout_marginTop="560dp"
                     android:layout_marginEnd="10dp"
                     android:minHeight="47dp"
                     android:orientation="horizontal"
@@ -476,7 +486,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="10dp"
-                    android:layout_marginTop="885dp"
+                    android:layout_marginTop="610dp"
                     android:layout_marginEnd="10dp"
                     android:minHeight="47dp"
                     android:orientation="horizontal"
@@ -524,7 +534,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="10dp"
-                    android:layout_marginTop="975dp"
+                    android:layout_marginTop="670dp"
                     android:layout_marginEnd="10dp"
                     android:minHeight="47dp"
                     android:orientation="horizontal"
@@ -570,7 +580,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="10dp"
-                    android:layout_marginTop="1075dp"
+                    android:layout_marginTop="750dp"
                     android:layout_marginEnd="10dp"
                     android:minHeight="47dp"
                     android:orientation="horizontal"
@@ -615,7 +625,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="10dp"
-                    android:layout_marginTop="1160dp"
+                    android:layout_marginTop="790dp"
                     android:layout_marginEnd="10dp"
                     android:orientation="horizontal"
                     app:layout_constraintEnd_toEndOf="parent"
@@ -658,24 +668,27 @@
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
 
+
                 <Button
                     android:id="@+id/confirmButton"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="150dp"
-                    android:layout_marginTop="1300dp"
-                    android:layout_marginEnd="150dp"
+                    style="@style/loginButton"
+                    android:layout_width="123dp"
+                    android:layout_height="45dp"
+                    android:layout_marginStart="100dp"
+                    android:layout_marginTop="860dp"
+                    android:layout_marginEnd="180dp"
                     android:layout_marginBottom="50dp"
-                    android:background="#03A9F4"
                     android:text="Sign up"
                     android:textAllCaps="false"
                     android:textColor="#FFF"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:layout_editor_absoluteX="111dp"
+                    tools:layout_editor_absoluteY="474dp" />
+            </androidx.cardview.widget.CardView>
 
-            </androidx.constraintlayout.widget.ConstraintLayout>
         </LinearLayout>
     </ScrollView>
-</androidx.constraintlayout.widget.ConstraintLayout>
+</RelativeLayout>

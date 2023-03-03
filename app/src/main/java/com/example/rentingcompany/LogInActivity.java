@@ -28,6 +28,8 @@ public class LogInActivity extends AppCompatActivity {
     ArrayList<String> status = new ArrayList();
     int emailExist, passwordExist, index = 0;
     int checkBoxFlag;
+    float v =0;
+
     SharedPrefManager sharedPrefManager;
 
 
@@ -42,6 +44,18 @@ public class LogInActivity extends AppCompatActivity {
 
         EditText passwordText =
                 (EditText) findViewById(R.id.passwordPlainText);
+
+        //animation fields
+        emailText.setTranslationY(300);
+        passwordText.setTranslationY(300);
+
+        emailText.setAlpha(v);
+        passwordText.setAlpha(v);
+
+        emailText.animate().translationY(0).alpha(1).setDuration(1000).setStartDelay(400).start();
+        passwordText.animate().translationY(0).alpha(1).setDuration(1000).setStartDelay(400).start();
+
+
 
         TextView emailError = (TextView) findViewById(R.id.emailErrorPlaintext);
         TextView passwordError = (TextView) findViewById(R.id.passwordErrorPlaintext);
